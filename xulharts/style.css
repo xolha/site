@@ -1,0 +1,80 @@
+:root /* mais especifica do que a tag html*/ {
+    --roxo-escuro: #3A2E5F;
+    --cinza-azulado: #1E1B29;
+    --lilas-pastel: #D6B3FF;
+}
+.background-nav {
+    background: var(--lilas-pastel);
+    width: 100vw; /* define a largura para cobrir toda a tela */
+    height: 150px;
+    padding: 20px 0;
+    position: relative; /*a posição não vai ser afetada pelo tamanho da tela */
+}
+
+.bloco /*aquela delimitação da pagina*/ {
+    max-width: 1200px;
+    padding: 0 5%; /* espaçamento interno */
+    margin: 0 auto; /* espaçamento externo */
+}
+.drop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    margin: 0 35px;
+}
+
+
+body {
+    background-image: url(img/quirrel_ass.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* faz a imagem cobrir toda a tela */
+    background-position: center;
+    height: 100vh; /* faz o body ter 100% da altura da tela */
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 115px;
+    height: 115px;
+}
+
+*{ /* * serve pra "resetar" a configuração padrao das configurações do navegador*/
+    list-style: none; /* tirar as bolinhas da lista*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+a {      
+    font-family: "Coiny", serif;
+    font-weight: 400;
+    font-style:normal;
+   color:#3A2E5F;
+}
+
+.titulo-pagina {      
+    font-family: "Coiny", serif;
+    font-weight: 400;
+    font-style: normal; 
+   color:#3A2E5F;
+   font-size: 18px;
+}
+/* .submenu {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+*/
+  
