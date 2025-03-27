@@ -1,0 +1,253 @@
+:root {
+    --roxo-escuro: #3A2E5F;
+    --cinza-azulado: #1E1B29;
+    --lilas-pastel: #D6B3FF;
+    --roxo2: #594591;
+    --branco: #F4F4F4;
+}
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* início da NavBar */
+.background-nav {
+    background-color: var(--cinza-azulado);
+    width: 100%;
+    height: 150px;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* início da NavBar */
+.container {
+    max-width: 1200px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.drop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li.dropdown > a {
+    position: relative;
+    padding-right: 20px;
+}
+
+nav ul li.dropdown > a::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.6em;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    font-family: "Coiny", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--roxo-escuro);
+    font-size: 18px;
+}
+
+nav > ul > li {
+    margin: 0 25px;
+}
+
+ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 20px;
+    color: var(--branco);
+}
+
+nav ul li:hover{
+    text-align: center;
+    min-width: 150px;
+    padding: 0;
+    background-color: var(--roxo-escuro);
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--roxo2);
+    min-width: 150px;
+    padding: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: var(--branco);
+}
+
+nav ul li ul li:hover {
+    background-color: var(--roxo-escuro);
+}
+
+.logo {
+    width: 115px;
+    height: 115px;
+}
+/* fim da NavBar */
+
+/* responsivo*/
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .menu-icon {
+        display: block;
+        position: relative;
+    }
+
+    .lista {
+        position: fixed;
+        background: var(--roxo-escuro);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: left 0.3s ease;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lista.active {
+        left: 0;
+    }
+
+    /*
+    ver essa questão aqui depois, problema na hora de clickar
+     */
+    nav ul li ul {
+        position: static;
+        top: auto;
+        left: auto;
+        background-color: var(--roxo2);
+        min-width: unset;
+    }
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    .lista li {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 1200px;
+        padding: 5px;
+    }
+
+    .grid-item {
+        column-count: 2;
+        column-gap: 5x;
+    }
+
+}
+/* fim do responsivo*/
+
+
+/* Fundo */
+body {
+    background-image: url(img/fundo.png);
+    background-repeat: repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    background-color: var(--cinza-azulado);
+    align-items: center;
+    font: bold 14px 'Lilita One';
+}
+
+/* Galeria */
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.grid-item {
+    column-count: 4;
+    column-gap: 10px;
+    visibility: hidden;
+}
+
+.grid a {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+}
+
+/*
+ p {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+}
+}*/
+
