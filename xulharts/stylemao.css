@@ -19,11 +19,10 @@
     background-color: var(--cinza-azulado);
     width: 100%;
     height: 150px;
-    padding: 20px 0;
+    padding: 20px 200px;
     position: relative;
 }
 
-/* início da NavBar */
 .container {
     max-width: 1200px;
     padding: 0 5%;
@@ -79,19 +78,18 @@ nav ul {
 
 nav ul li {
     position: relative;
+    text-align: center;
+    min-width: 150px;
+}
+
+nav ul li:hover{
+    background-color: var(--roxo-escuro);
 }
 
 nav ul li a{
     display: block;
     padding: 15px 20px;
     color: var(--branco);
-}
-
-nav ul li:hover{
-    text-align: center;
-    min-width: 150px;
-    padding: 0;
-    background-color: var(--roxo-escuro);
 }
 
 nav ul li ul {
@@ -143,6 +141,28 @@ nav ul li ul li:hover {
         position: relative;
     }
 
+    .background-nav{
+        padding: 20px 0;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li ul {
+        display: none;
+        position: static;
+        margin-left: 20px;
+    }
+
+    nav ul li:hover ul {
+        display: block;
+    }
+
+    nav ul li ul {
+        position: relative;
+    }
+
     .lista {
         position: fixed;
         background: var(--roxo-escuro);
@@ -159,39 +179,32 @@ nav ul li ul li:hover {
         left: 0;
     }
 
-    /*
-    ver essa questão aqui depois, problema na hora de clickar
-     */
-    nav ul li ul {
-        position: static;
-        top: auto;
-        left: auto;
-        background-color: var(--roxo2);
-        min-width: unset;
-    }
-    nav ul li:hover ul {
-        display: block;
-    }
-
     .lista li {
         font-size: 30px;
         margin: 20px 0;
     }
+}
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-        margin: 0 auto;
-        justify-content: center;
-        max-width: 1200px;
-        padding: 5px;
-    }
+.grid img {
+    column-count: 2;
+    width: auto;
+    height: auto;
+    display: block;
+}
 
-    .grid-item {
-        column-count: 2;
-        column-gap: 5x;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 10px;
+}
 
+.grid-item {
+    column-count: 2;
+    column-gap: 5px;
+    visibility: hidden;
 }
 /* fim do responsivo*/
 
@@ -200,6 +213,7 @@ nav ul li ul li:hover {
 body {
     background-image: url(img/fundo.png);
     background-repeat: repeat;
+    justify-content: center;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -217,7 +231,6 @@ footer{
     height: auto;
     display: block;
     margin-bottom: 10px;
-    padding: 10px 5px;
 }
 
 .grid {
@@ -242,12 +255,4 @@ footer{
     align-items: center;
 }
 
-/*
- p {
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    align-items: center;
-}
-}*/
 
