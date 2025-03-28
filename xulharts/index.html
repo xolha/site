@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xulharts</title>
-
-    <link rel="stylesheet" href="style.css"> <!-- para linkar o html com css-->
-    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <div class="background-nav">
     <header>
-        <div class="bloco">  <!-- NavBar-->
+        <div class="container">  <!-- NavBar-->
             <nav class="drop-menu">
-            <a href="index.html">
-                <img src="./img/XULHARTS.png" alt="logo">
-            </a>
-                <ul>
-                    <li class="dropdown"> <a href="#">Desenhos</a>
-                         <div class="dropdown-menu">
-                            <a href="catalogo.html">Catálogo</a>
-                            <a href="arte_a_mao.html">Arte a Mão</a>
-                            <a href="arte_digital.html">Arte Digital</a>
-                            <a href="comissoes.html">Comissões</a>
-                        </div>
+            <a href="index.html"> <img class="logo" src="./img/XULHARTS.png" alt="logo"></a>
+                <ul class="lista">
+                    <li class="dropdown"> <a>Desenhos</a>
+                        <ul>
+                           <li> <a href="catalogo.html">Catálogo</a> </li>
+                           <li> <a href="arte_a_mao.html">Arte a Mão</a> </li>
+                           <li> <a href="arte_digital.html">Arte Digital</a> </li>
+                            <li> <a href="comissoes.html">Comissões</a> </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#">Biscuit</a>
+                    <li class="dropdown"> <a>Biscuit</a>
                        <ul>
-                            <li><a class="menu">Pop</a></li>
-                            <li><a class="menu">Chibi</a></li>
-                            <li><a class="menu">Anime</a></li>
+                            <li><a href="pop.html">Pop</a></li>
+                            <li><a href="chibi.html">Chibi</a></li>
+                            <li><a href="anime.html">Anime</a></li>
                         </ul> 
                     </li>
                     <li>
-                        <a href="contato.html">Contato</a>
+                        <a href="sobre.html">Sobre</a>
                     </li>
                 </ul>
+                <div class="menu-icon">
+                    <img src="./img/menu.png" alt="menu">
+                </div>
             </nav>
         </div>
     </header>
-
 </div>
+
+<script>
+    let menuIcon = document.querySelector('.menu-icon')
+    let lista = document.querySelector('.lista')
+
+    menuIcon.addEventListener('click', () => {
+        if (lista.classList.contains('active')) {
+            lista.classList.remove('active')
+        } else {
+            lista.classList.add('active');
+        }
+    })
+
+</script>
 
 </body>
 </html>
