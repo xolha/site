@@ -183,7 +183,27 @@ nav ul li ul li:hover {
         font-size: 30px;
         margin: 20px 0;
     }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-count: 2;
+        column-gap: 0;
+    }
+
+    .grid img {
+        max-width: 1000px;
+        padding: 10px 0;
+    }
+    .grid-item {
+        column-count: 2;
+    }
 }
+
+
+/*
+
 
 .grid img {
     column-count: 2;
@@ -206,6 +226,7 @@ nav ul li ul li:hover {
     column-gap: 5px;
     visibility: hidden;
 }
+ */
 /* fim do responsivo*/
 
 
@@ -234,18 +255,10 @@ footer{
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin: 0 auto;
-    justify-content: center;
-    max-width: 1200px;
-    padding: 10px;
-}
-
-.grid-item {
+    grid-template-columns: minmax(14px, auto) minmax(1523px, auto) 1fr;
+    padding: 50px;
+    margin: 40px auto;
     column-count: 4;
-    column-gap: 10px;
-    visibility: hidden;
 }
 
 .grid a {
@@ -254,5 +267,6 @@ footer{
     font-style: normal;
     align-items: center;
 }
+
 
 
