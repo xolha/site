@@ -16,15 +16,15 @@
             <nav class="drop-menu">
                 <a href="index.html"><img class="logo" src="./img/XULHARTS.png" alt="logo"></a>
                 <ul class="lista">
-                    <li class="dropdown"> <a>Desenhos</a>
+                    <li class="dropdown"><a>Desenhos</a>
                         <ul>
-                            <li> <a href="catalogo.html">Catálogo</a> </li>
-                            <li> <a href="arte_a_mao.html">Arte a Mão</a> </li>
-                            <li> <a href="arte_digital.html">Arte Digital</a> </li>
-                            <li> <a href="comissoes.html">Comissões</a> </li>
+                            <li><a href="catalogo.html">Catálogo</a></li>
+                            <li><a href="arte_a_mao.html">Arte a Mão</a></li>
+                            <li><a href="arte_digital.html">Arte Digital</a></li>
+                            <li><a href="comissoes.html">Comissões</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"> <a>Biscuit</a>
+                    <li class="dropdown"><a>Biscuit</a>
                         <ul>
                             <li><a href="pop.html">Pop</a></li>
                             <li><a href="chibi.html">Chibi</a></li>
@@ -102,7 +102,8 @@
             <img src="img-mao/artes_11.jpg" alt="artes 11">
         </a>
 
-        <a href="img-mao/spirit_blossom_ships.jpg" data-lightbox="mao" data-title="Alguns shipps do Florescer Espiritual">
+        <a href="img-mao/spirit_blossom_ships.jpg" data-lightbox="mao"
+           data-title="Alguns shipps do Florescer Espiritual">
             <img src="img-mao/spirit_blossom_ships.jpg" alt="spirit_blossom_ships">
         </a>
 
@@ -152,6 +153,7 @@
         constructor(grid, param2) {
         }
     }
+
     document.addEventListener("DOMContentLoaded", function () {
         let grid = document.querySelector('.grid-item');
         let msnry = new Masonry(grid, {
@@ -169,7 +171,52 @@
 </script>
 
 <footer>
-    <p> aaaaaa</p>
+    <div class="footer-top">
+        <!-- Redes -->
+        <div>
+            <h3> Outras Redes Sociais</h3>
+            <ul>
+                <li><a href="https://br.pinterest.com/xulharts/_created">
+                    <img src="./img/pinterest.png" alt="pinterest">
+                </a></li>
+                <li><a href="https://twitter.com/xulharts">
+                    <img src="./img/twitter.png" alt="twitter">
+                </a></li>
+                <li><a href="https://www.facebook.com/xulharts">
+                    <img src="./img/facebook.png" alt="facebook">
+                </a></li>
+            </ul>
+        </div>
+        <!-- Contato -->
+        <div>
+            <h3> Entre em Contato</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/xulharts/">
+                    <img src="./img/instagram.png" alt="instagram">
+                </a></li>
+                <li><a href="mailto:xulharts@gmail.com">
+                    <img src="./img/gmail.png" alt="gmail">
+                </a></li>
+                <li><a href="https://wa.me/5527996057158?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda!">
+                    <img src="./img/whatsapp.png" alt="whatsapp">
+                </a></li>
+            </ul>
+        </div>
+        <!-- Github -->
+        <div>
+            <ul>
+                <li>
+                    <h3> ­</h3>
+                    <ul>
+                       <li>  <a href="https://github.com/xolha"> <img src="./img/github.png" alt="github">
+                       </a></li>
+                    </ul>
+            </ul>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <hr>
+    <p class="copyright">© Copyright - Júlia Porto Alvarenga - 2025</p>
 </footer>
 
 </body>

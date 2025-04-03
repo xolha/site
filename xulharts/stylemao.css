@@ -55,7 +55,7 @@ ul {
 }
 
 li {
-    font-family: "Coiny", serif;
+    font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
     color: var(--roxo-escuro);
@@ -200,33 +200,6 @@ nav ul li ul li:hover {
         column-count: 2;
     }
 }
-
-
-/*
-
-
-.grid img {
-    column-count: 2;
-    width: auto;
-    height: auto;
-    display: block;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    margin: 0 auto;
-    justify-content: center;
-    max-width: 1200px;
-    padding: 10px;
-}
-
-.grid-item {
-    column-count: 2;
-    column-gap: 5px;
-    visibility: hidden;
-}
- */
 /* fim do responsivo*/
 
 
@@ -240,10 +213,59 @@ body {
     padding: 0;
 }
 
-footer{
+/*  footer */
+
+footer {
     background-color: var(--cinza-azulado);
-    align-items: center;
-    font: bold 14px 'Lilita One';
+    padding: 15px 0;
+}
+
+.footer-top h3 {
+    text-align: center;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--branco);
+}
+
+.footer-top {
+   display: flex;
+   justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-top > div {
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+
+.footer-top ul {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--branco );
+    margin: 10px auto;
+    width: 80%;
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Sniglet", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--branco);
+}
+
+footer .footer-top img{
+    width: 20px;
+    height: 20px;
 }
 
 /* Galeria */
