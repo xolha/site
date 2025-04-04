@@ -6,6 +6,9 @@
     <title>Arte a Mão - xulharts</title>
     <link href="stylemao.css" rel="stylesheet">
     <link href="lightbox.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -14,7 +17,8 @@
     <header>
         <div class="container">  <!-- NavBar-->
             <nav class="drop-menu">
-                <a href="index.html"><img class="logo" src="./img/XULHARTS.png" alt="logo"></a>
+                <a href="index.html"><img class="logo" src="./img/XULHARTS.png" onmouseover="this.src='./img/XULHARTSBlink.png';"
+                                          onmouseout="this.src='./img/XULHARTS.png';" alt="logo"></a>
                 <ul class="lista">
                     <li class="dropdown"><a>Desenhos</a>
                         <ul>
@@ -43,8 +47,8 @@
     </header>
 </div>
 
+<!-- Galeria -->
 <section class="grid">
-
     <div class="grid-item">
         <a href="img-mao/lulu_e_veigar.jpg" data-lightbox="mao" data-title="Lulu & Veigar">
             <img src="img-mao/lulu_e_veigar.jpg" alt="lulu e veigar">
@@ -80,6 +84,10 @@
 
         <a href="img-mao/artes_7.jpg" data-lightbox="mao" data-title="Desenho de observação">
             <img src="img-mao/artes_7.jpg" alt="artes 7">
+        </a>
+
+        <a href="img-mao/Releitura.jpg" data-lightbox="mao" data-title="Releitura da obra 'Sol Poente' da Tarsila do Amaral">
+            <img src="img-mao/Releitura.jpg" alt="Releitura">
         </a>
 
         <a href="img-mao/shirahoshi.jpg" data-lightbox="mao" data-title="Shirahoshi">
@@ -130,10 +138,30 @@
         <a href="img-mao/knight_2.jpg" data-lightbox="mao" data-title="Composição livre com pontos">
             <img src="img-mao/knight_2.jpg" alt="knight">
         </a>
+
+        <a href="img-mao/Chill_2.jpg" data-lightbox="mao" data-title="Chill 2">
+            <img src="img-mao/Chill_2.jpg" alt="Chill_2">
+        </a>
+        <a href="img-mao/Rimuru.jpg" data-lightbox="mao" data-title="Rimuru">
+            <img src="img-mao/Rimuru.jpg" alt="Rimuru">
+        </a>
+        <a href="img-mao/Prof_Adriano.jpg" data-lightbox="mao" data-title="Prof. Adriano e Frederico ">
+            <img src="img-mao/Prof_Adriano.jpg" alt="Prof_Adriano">
+        </a>
+        <a href="img-mao/Menininha.jpg" data-lightbox="mao" data-title="Menininha">
+            <img src="img-mao/Menininha.jpg" alt="Menininha">
+        </a>
+
+        <a href="img-mao/hanzo_pop.jpg" data-lightbox="mao" data-title="Hanzo Pop">
+            <img src="img-mao/hanzo_pop.jpg" alt="hanzo_pop">
+        </a>
     </div>
 
 </section>
 
+<!-- Logo -->
+
+<!-- Menu -->
 <script>
     let menuIcon = document.querySelector('.menu-icon')
     let lista = document.querySelector('.lista')
@@ -148,6 +176,7 @@
 
 </script>
 
+<!-- Grid -->
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js">
     class Masonry {
         constructor(grid, param2) {
@@ -163,18 +192,18 @@
         });
     });
 </script>
-
-<script src="/xulharts/lightbox-plus-jquery.js"></script>
-
 <script>
     ScrollReveal().reveal('.grid img');
 </script>
+
+<!-- LightBox -->
+<script src="/xulharts/lightbox-plus-jquery.js"></script>
 
 <footer>
     <div class="footer-top">
         <!-- Redes -->
         <div>
-            <h3> Outras Redes Sociais</h3>
+            <h3> Redes Sociais</h3>
             <ul>
                 <li><a href="https://br.pinterest.com/xulharts/_created">
                     <img src="./img/pinterest.png" alt="pinterest">
@@ -206,7 +235,7 @@
         <div>
             <ul>
                 <li>
-                    <h3> ­</h3>
+                    <h3> Desenvolvimento </h3>
                     <ul>
                        <li>  <a href="https://github.com/xolha"> <img src="./img/github.png" alt="github">
                        </a></li>
