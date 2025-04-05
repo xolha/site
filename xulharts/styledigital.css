@@ -14,8 +14,9 @@
     text-decoration: none;
 }
 
- /* início da NavBar */
+/* início da NavBar */
 .background-nav {
+    background-color: var(--cinza-azulado);
     width: 100%;
     height: 150px;
     padding: 20px 200px;
@@ -54,7 +55,7 @@ ul {
 }
 
 li {
-    font-family: "Coiny", serif;
+    font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
     color: var(--roxo-escuro);
@@ -87,6 +88,7 @@ nav ul li:hover{
 
 nav ul li a{
     display: block;
+    padding: 15px 20px;
     color: var(--branco);
 }
 
@@ -115,11 +117,11 @@ nav ul li ul li a {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    color: #F4F4F4;
+    color: var(--branco);
 }
 
 nav ul li ul li:hover {
-    background-color:  var(--roxo-escuro);
+    background-color: var(--roxo-escuro);
 }
 
 .logo {
@@ -127,17 +129,6 @@ nav ul li ul li:hover {
     height: 115px;
 }
 /* fim da NavBar */
-
-/* Fundo */
-body {
-    background-image: url(img-digital/quirrel_ass.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
 
 /* responsivo*/
 .menu-icon {
@@ -192,4 +183,109 @@ body {
         font-size: 30px;
         margin: 20px 0;
     }
+
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-count: 2;
+        column-gap: 0;
+    }
+
+    .grid img {
+        max-width: 1000px;
+        padding: 10px 0;
+    }
+    .grid-item {
+        column-count: 2;
+    }
+}
+/* fim do responsivo*/
+
+
+/* Fundo */
+body {
+    background-image: url(img/fundo.png);
+    background-repeat: repeat;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*  footer */
+
+footer {
+    background-color: var(--cinza-azulado);
+    padding: 15px 0;
+}
+
+.footer-top h3 {
+    text-align: center;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--branco);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-top > div {
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+
+.footer-top ul {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--branco );
+    margin: 10px auto;
+    width: 80%;
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Sniglet", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--branco);
+}
+
+footer .footer-top img{
+    width: 20px;
+    height: 20px;
+}
+
+/* Galeria */
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.grid {
+    grid-template-columns: minmax(14px, auto) minmax(1523px, auto) 1fr;
+    padding: 50px;
+    margin: 40px auto;
+    column-count: 4;
+}
+
+.grid a {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
 }
