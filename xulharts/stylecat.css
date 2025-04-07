@@ -1,9 +1,11 @@
 :root {
     --roxo-escuro: #3A2E5F;
+    --roxo-escuro2: #211427;
     --cinza-azulado: #1E1B29;
     --lilas-pastel: #D6B3FF;
     --roxo2: #594591;
     --branco: #F4F4F4;
+    --azul-claro: #9189af;
 }
 
 * {
@@ -212,6 +214,49 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Catálogo */
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.catalog1, .catalog2 {
+    background-color: var(--azul-claro);
+    padding: 80px;
+    margin: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emotes, .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.emotes img, .badges img {
+    width: 150px;
+    height: 150px;
+}
+
+.corpo img, .chibi img {
+    height: 550px;
+}
+
+h2 {
+    color: var(--roxo-escuro2);
+    text-align: center;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /*  footer */
 
