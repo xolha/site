@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html class="sr" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sniglet:wght@400;800&display=swap"
           rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
 <body>
@@ -105,21 +108,21 @@
     <hr>
     <h2>INFORMAÇÕES</h2>
     <p>
-        <b> PAGAMENTO: </b> PicPay, pix ou depósito bancário, sendo que 50% do valor deverá ser efetuado antes do
+        <b class="negrito"> PAGAMENTO: </b> PicPay, pix ou depósito bancário, sendo que 50% do valor deverá ser efetuado antes do
         envio do rascunho e os outros 50% antes da arte final. Cartão de crédito será cobrado 100% do valor mais a taxa
         da maquininha.
     </p>
     <p>
-        <b> PRAZOS: </b> Varia de acordo com o pedido do cliente.
+        <b class="negrito"> PRAZOS: </b> varia de acordo com o pedido do cliente.
     </p>
     <p>
-        <b> PERSONAGENS ADICIONAIS: </b> Ombro/ícone + R$25,00; quadril + R$40,00; corpo todo + R$65,00; chibi R$45,00.
+        <b class="negrito"> PERSONAGENS ADICIONAIS: </b> ombro/ícone + R$25,00; quadril + R$40,00; corpo todo + R$65,00; chibi R$45,00.
     </p>
     <p>
-        <b> CENÁRIOS </b> Preço pode variar de acordo com a complexidadde do desenho.
+        <b class="negrito"> CENÁRIOS </b> preço pode variar de acordo com a complexidadde do desenho.
     </p>
     <p>
-        OBS.: preço dos chibis e de corpo podem variar caso o pedido do cliente seja algo mais complexo.
+        OBS.: os preços dos chibis e de corpo podem variar caso o pedido do cliente seja algo mais complexo.
     </p>
 </div>
 
@@ -141,6 +144,16 @@
 
 <!-- LightBox -->
 <script src="/xulharts/lightbox-plus-jquery.js"></script>
+
+<!-- ScrollReview -->
+<script>
+    ScrollReveal().reveal('.catalog', {delay: 450});
+    ScrollReveal().reveal('.emotes img');
+    ScrollReveal().reveal('.badges img');
+    ScrollReveal().reveal('.chibi img');
+    ScrollReveal().reveal('.corpo img');
+    ScrollReveal().reveal('.info');
+</script>
 
 <footer>
     <div class="footer-top">
