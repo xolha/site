@@ -277,15 +277,8 @@ footer .footer-top img{
 }
 
 .grid {
-    grid-template-columns: minmax(14px, auto) minmax(1523px, auto) 1fr;
     padding: 50px;
     margin: 40px auto;
     column-count: 4;
 }
 
-.grid a {
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    align-items: center;
-}
