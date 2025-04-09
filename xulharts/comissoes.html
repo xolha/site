@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html class="sr" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,12 @@
     <link href="lightbox.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sniglet:wght@400;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sniglet:wght@400;800&display=swap"
+          rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
 <body>
@@ -17,7 +21,8 @@
     <header>
         <div class="container">  <!-- NavBar-->
             <nav class="drop-menu">
-                <a href="index.html"><img class="logo" src="./img/XULHARTS.png" onmouseover="this.src='./img/XULHARTSBlink.png';"
+                <a href="index.html"><img class="logo" src="./img/XULHARTS.png"
+                                          onmouseover="this.src='./img/XULHARTSBlink.png';"
                                           onmouseout="this.src='./img/XULHARTS.png';" alt="logo"></a>
                 <ul class="lista">
                     <li class="dropdown"><a>Desenhos</a>
@@ -351,24 +356,14 @@
 
 </script>
 
-<!-- Grid -->
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js">
-    class Masonry {
-        constructor(grid, param2) {
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        let grid = document.querySelector('.grid-item');
-        let msnry = new Masonry(grid, {
-            itemSelector: 'img',
-            columnWidth: 200,
-            gutter: 10
-        });
-    });
-</script>
+<!-- ScrollReview -->
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <script>
-    ScrollReveal().reveal('.grid img');
+    ScrollReveal().reveal('.grid img', {
+        delay: 375,
+        duration: 500,
+        reset: true,
+    });
 </script>
 
 <!-- LightBox -->
@@ -412,7 +407,7 @@
                 <li>
                     <h3> Desenvolvimento </h3>
                     <ul>
-                        <li>  <a href="https://github.com/xolha"> <img src="./img/github.png" alt="github">
+                        <li><a href="https://github.com/xolha"> <img src="./img/github.png" alt="github">
                         </a></li>
                     </ul>
             </ul>

@@ -281,3 +281,8 @@ footer .footer-top img{
     margin: 40px auto;
     column-count: 4;
 }
+
+html.sr .grid img {
+    visibility: hidden;
+}
+
