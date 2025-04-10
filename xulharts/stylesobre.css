@@ -214,8 +214,21 @@ body {
 }
 
 /* Sobre */
+.container-sobre {
+    background-color: var(--azul-claro);
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    padding: 50px;
+    max-width: 1000px
+}
 
-
+p {
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--branco);
+}
 
 /*  footer */
 
