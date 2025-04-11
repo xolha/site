@@ -215,12 +215,21 @@ body {
 
 /* Sobre */
 .container-sobre {
-    background-color: var(--azul-claro);
+    background-color: var(--roxo-escuro2);
     justify-content: center;
     align-items: center;
     margin: 100px auto;
     padding: 50px;
-    max-width: 1000px
+    max-width: 1000px;
+}
+
+.conteudo {
+    display: flex;
+    flex-wrap: nowrap ;
+}
+.imagem img {
+    width: 100%;
+    max-width: 100%;
 }
 
 p {
@@ -228,6 +237,9 @@ p {
     font-weight: 400;
     font-style: normal;
     color: var(--branco);
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
 }
 
 /*  footer */
