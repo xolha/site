@@ -186,18 +186,6 @@ nav ul li ul li:hover {
         font-size: 30px;
         margin: 20px 0;
     }
-
-    .catalog {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-items: center;
-    }
-
-    .catalog1, .catalog2 {
-        margin: 20px 10px;
-        padding: 20px;
-    }
 }
 
 /* fim do responsivo*/
@@ -216,17 +204,13 @@ body {
 /* Sobre */
 .container-sobre {
     background-color: var(--roxo-escuro2);
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
     margin: 100px auto;
     padding: 50px;
     max-width: 1000px;
 }
 
-.conteudo {
-    display: flex;
-    flex-wrap: nowrap ;
-}
 .imagem img {
     width: 100%;
     max-width: 100%;
