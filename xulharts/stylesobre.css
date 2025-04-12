@@ -186,6 +186,18 @@ nav ul li ul li:hover {
         font-size: 30px;
         margin: 20px 0;
     }
+
+    .container-sobre {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagem, .sobre {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* fim do responsivo*/
@@ -212,8 +224,8 @@ body {
 }
 
 .imagem img {
+    height: auto;
     width: 100%;
-    max-width: 100%;
 }
 
 p {
