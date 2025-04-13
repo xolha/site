@@ -84,6 +84,21 @@
     </div>
 </div>
 
+<!-- Menu -->
+<script>
+    let menuIcon = document.querySelector('.menu-icon')
+    let lista = document.querySelector('.lista')
+
+    menuIcon.addEventListener('click', () => {
+        if (lista.classList.contains('active')) {
+            lista.classList.remove('active')
+        } else {
+            lista.classList.add('active');
+        }
+    })
+
+</script>
+
 <!-- ScrollReview -->
 <script>
     ScrollReveal().reveal('.container-sobre', {delay: 450});
