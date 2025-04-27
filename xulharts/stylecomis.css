@@ -282,3 +282,6 @@ footer .footer-top img{
     column-count: 4;
 }
 
+html.sr .grid {
+    visibility: hidden;
+}
