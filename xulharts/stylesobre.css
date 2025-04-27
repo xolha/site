@@ -219,13 +219,15 @@ body {
     display: flex;
     flex-wrap: nowrap;
     margin: 100px auto;
-    padding: 50px;
+    padding: 10px 15px;
     max-width: 1000px;
 }
 
 .imagem img {
     height: auto;
     width: 100%;
+    margin-top: 50px;
+    padding: 13px;
 }
 
 p {
@@ -235,7 +237,7 @@ p {
     color: var(--branco);
     font-size: 18px;
     text-align: center;
-    padding: 10px;
+    padding: 13px;
 }
 
 /*  footer */
