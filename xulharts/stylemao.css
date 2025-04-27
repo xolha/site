@@ -282,7 +282,7 @@ footer .footer-top img{
     column-count: 4;
 }
 
-html.sr .grid img {
+html.sr .grid {
     visibility: hidden;
 }
 
