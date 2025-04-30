@@ -196,7 +196,7 @@ nav ul li ul li:hover {
     }
 
     .catalog1, .catalog2 {
-        margin: 20px 10px;
+        margin: 20px 40px;
         padding: 20px;
     }
 }
@@ -224,7 +224,7 @@ body {
 .catalog1, .catalog2 {
     background-color: var(--azul-claro);
     padding: 80px;
-    margin: 80px 60px;
+    margin: 40px 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
