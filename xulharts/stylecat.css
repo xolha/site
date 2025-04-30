@@ -23,6 +23,7 @@
     height: 150px;
     padding: 20px 200px;
     position: relative;
+    z-index: 9999;
 }
 
 .container {
